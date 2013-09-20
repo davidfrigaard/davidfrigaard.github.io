@@ -73,8 +73,8 @@ table {
 */
 
 body {
-	background-color: #7983FF;
-	/*background-image: url(../images/geometry_@2X.png);*/
+	background-color: #d7d0cd;
+	background-image: url(../images/prefect.jpeg);
 	background-repeat: repeat;
 	color: #0F0F0F;
 	font-size: 16pt;
@@ -112,7 +112,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
 }
 
-h1 {font-size: 58px; line-height: 62px; text-transform: uppercase; color: #453EE8; background-color: #FF5C30;}
+h1 {font-size: 58px; line-height: 62px; text-transform: uppercase; color: #E7000A;}
 h2 {font-size: 32px; line-height: 38px;}
 h3 {font-size: 28px; line-height: 34px;}
 h4 {font-size: 24px; line-height: 30px;}
