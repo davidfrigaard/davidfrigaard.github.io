@@ -83,6 +83,9 @@ body {
 	font-weight: 400;
 }
 
+
+
+
 p {
 	margin-top: 15px;
 }
@@ -119,7 +122,7 @@ h4 {font-size: 24px; line-height: 30px;}
 h5 {font-size: 20px; line-height: 24px;}
 h6 {font-size: 20px; line-height: 24px;}
 
-ul {list-style: disc inside;}
+ul {list-style: none inside;}
 ol {list-style: decimal}
 ul.square {list-style: square outside}
 ul.circle {list-style: circle outside}
@@ -185,3 +188,8 @@ hr {
 
 
 
+@media only screen and (max-width: 767px) {
+body{font-size: 12pt;}
+h1 {font-size: 14pt; line-height: 26px; text-transform: uppercase; color: #003454;}
+h2 {font-size: 20px; line-height: 24px;}
+}
