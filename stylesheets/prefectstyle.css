@@ -135,7 +135,7 @@ ul li {
 }
 
 ul p {
-    margin-left: 60px; 
+ 
     display: none;
 }
 
@@ -143,9 +143,9 @@ ul li:hover p, ul  li:focus p {
     display: block;
 }
 
-ul > li:hover {
+/*ul > li:hover {
 	margin-bottom: 50px;
-}
+}*/
 
 
 
