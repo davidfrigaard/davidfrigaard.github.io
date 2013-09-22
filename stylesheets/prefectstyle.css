@@ -139,7 +139,7 @@ ul p {
     display: none;
 }
 
-ul li:hover p, ul  li:focus p {
+ul li:hover p, ul  li:focus p, ul li:active p {
     display: block;
 }
 
