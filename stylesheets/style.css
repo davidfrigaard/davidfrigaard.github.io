@@ -1,7 +1,7 @@
-/* Copyright 2013 David Frigaard 
-/* All rights reserved 
-/* www.davidfrigaard.com 
-/* Version 1.0 2013/07/21 
+/* Copyright 2013 David Frigaard
+/* All rights reserved
+/* www.davidfrigaard.com
+/* Version 1.0 2013/07/21
 */
 
 /* CSS RESET
@@ -18,8 +18,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -30,7 +30,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,7 +57,7 @@ table {
 /* e.g. fonts, images for background, ...
 */
 
-@font-face {
+/*@font-face {
 	font-family: Adelle;
 	src: url('../fonts/AdelleBasic_Bold.otf') format('opentype');
 }
@@ -66,7 +66,7 @@ table {
 	font-family: Adelle;
 	font-style: italic;
 	src: url('../fonts/AdelleBasic_BoldItalic.otf') format('opentype');
-}
+}*/
 
 /* DEFINING STLYES
 /* Change these if you need to
@@ -74,13 +74,14 @@ table {
 
 body {
 	/*background-color: #F1F1E9;*/
-	background-image: url(../images/geometry_@2X.png);
-	background-repeat: repeat;
+	/*background-image: url(../images/geometry_@2X.png);
+	background-repeat: repeat;*/
+	background-color: #FFFFFF;
 	color: #0F0F0F;
 	font-size: 14pt;
 	line-height: 16pt;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Fira Mono', 'Source Code Pro', Helvetica, Arial, sans-serif;
+	font-weight: 500;
 }
 
 p {
@@ -90,11 +91,10 @@ p {
 
 a, a:visited {
 	color: #0F0F0F;
-	text-decoration: none;
 	font-style: inherit;
 	font-size: inherit;
 	font-weight: inherit;
-}
+	text-decoration: underline; }
 
 a:hover, a:focus {
 	color: #E8151B;
@@ -103,8 +103,8 @@ a:hover, a:focus {
 h1, h2, h3, h4, h5, h6 {
 	color: #0F0F0F;
 	margin-top: 25px;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Fira Mono', 'Source Code Pro', Arial, sans-serif;
+	font-weight: 700;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -139,6 +139,8 @@ hr {
 
 #title {
 	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
 
 /*#navbar {
@@ -147,7 +149,7 @@ hr {
 	text-align: center;
 }
 
-#navbar li { 
+#navbar li {
 	text-transform: none;
 	display: inline-block;
 	margin-bottom: 30px;
@@ -159,7 +161,7 @@ hr {
 	color: #2D867D;
 }
 
-#navbar li a:hover, 
+#navbar li a:hover,
 #navbar li a:focus {
 	color: #6D9B63;
 }
@@ -177,10 +179,10 @@ hr {
 	font-size: 16px;
 	font-style: italic;
 }
-
+/*
 #titlepage {
 	margin-top: 500px;
-}
+}*/
 
 #topbar {
 	margin-top: 30px;
@@ -191,15 +193,23 @@ hr {
 	margin-bottom: 30px;
 }
 
-.navigation > div {
+.navigation div {
 	display: inline-block;
-	width: 32.9%;
+	width: 32%;
 	text-align: center;
 }
+
+.navigation div a,a:visited {
+	text-decoration: none;
+	}
 
 .projecttable {
 	width: 100%;
 	border-collapse: collapse;
+}
+
+.projecttable a {
+	color: #E8151B;
 }
 .projecttable tr {
 	border: solid;
@@ -216,4 +226,5 @@ hr {
 #projectname {
 	vertical-align: middle;
 	text-align: center;
+	width: 25%;
 }
