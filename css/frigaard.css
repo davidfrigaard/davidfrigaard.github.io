@@ -1,0 +1,13 @@
+.navigation {
+  width: 100%;
+  font-size: 2.4rem;
+}
+.navigation ul {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.navigation ul li {
+  display: inline-block;
+  width: 24%;
+}

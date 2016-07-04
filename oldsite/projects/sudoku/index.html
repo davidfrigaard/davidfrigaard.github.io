@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>David Frigaard</title>
+
+<meta name="description" content="David Frigaard's personal website">
+<meta name="author" content="David Frigaard">
+<meta name="keywords" content="personal webpage, projects">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--STYLESHEETS-->
+<link rel="stylesheet" href="../../stylesheets/style.css">
+<link rel="stylesheet" href="../../stylesheets/skeleton.css">
+
+<!--ICONS-->
+<link rel="shortcut icon" href="../../images/favicon.ico">
+<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../images/apple-touch-icon-114x114.png">
+
+<!--OTHER-->
+<link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="sixteen columns">
+			<h4 id="title">David Frigaard</h4>
+				<blockquote class="twitter-tweet" lang="en"><p>In Suduko, how many numbers must be given in a pre-populated grid to make sure there is a unique solution? Does their position matter?</p>&mdash; Daniel Susskind (@danielsusskind) <a href="https://twitter.com/danielsusskind/status/582517984926760960">March 30, 2015</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			<p>Solving this arithmetically would be a nightmare, however it can eaisly be done using Python, and a bit of code. I have no clue how many numbers we must need, but I am guessing that their position is very important.
+
+			<p>Now on to the interesting part: how we plan on solving the problem. It should be fairly straightforward, using Peter Norvig's sudoku solver. We will create a function that produces random sudoku grids with x amount of numbers populating them. If the solver fails, we can safely increase the number to x+1, and try again. Eventually we will reach a number where the solver works, in which case we need to be more careful in our testing of the position of the numbers. We also ought to double check different configurations of x-1.
+			<p>Things to watch for: requiring different types of numbers, e.g. must have a varity of digits, not just say 1s, 3s and 5s. 
+		</div>
+
+
+	</div>
+
+</body>
+</html>
